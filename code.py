@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = "NzYyOTc3NzgyMTAzODAxODY2.X3xAbg.YShtxxNZrltt4V2BpGy_eOouLIs"
+TOKEN = "SECRET TOKEN"
 
 app = commands.Bot(command_prefix="/")
 
