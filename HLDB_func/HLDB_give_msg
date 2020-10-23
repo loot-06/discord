@@ -1,0 +1,46 @@
+help_msg = """                                                      
+HELPER LOOT COMMAND
+
+This program is open source
+이프로그램은 오픈소스입니다
+you can check https://github.com/loot-06/discord/tree/main to watch code
+위 사이트로 이동해서 코드를 볼 수 있습니다
+THIS PROGRAM IS DEVELOPED BY ONE PERSON
+이 프로그램은 혼자서 개발됩니다
+====================
++---COMMAND_LIST---+
+|도움(help)|
+|레식기록(r6recode)|
++-------------------+
+You can check how to use command by \'What you want to know\' at behind of the command
+명령어 뒤에 \'알고싶은 명령어\'를 붙임으로써 명령어 이용방법을 확인 할 수 있습니다
+If you have inquiries, please DM to 𝓁𝑜𝑜𝓉#0204
+문의가 있을경우 𝓁𝑜𝑜𝓉#0204로 DM 주세요
+"""
+r6_recode_msg ="""
+R6 RECODE COMMAND
+r6recode [game result] [now rank(if you use this command first)]
+레식기록 [게임 결과] [현랭킹(+ 혹은 -)]
+
+Explain:
+This command is recode your Tom Clancy's Rainbow Six Siege's ranking
+이 명령어는 이용자의 Tom Clancy's Rainbow Six Siege 랭킹을 기록해줍니다
+
+Example
+r6recode win | 레식 기록 승
+r6recode win bronze 1 | 레식 기록 승 브론즈 1
+
+WARNING! | 경고!
+recode your ranking is not develop please wait until database func is developed
+이용자의 랭킹을 기록하는 기능이 개발되지 않았습니다 database 기능이 개발될때까지 기다려주세요
+"""
+def give_msg(msg_name=None):
+    if msg_name == None:
+        return None
+    elif msg_name == "help":
+        return help_msg
+
+    elif msg_name == "r6recode":
+        return r6_recode_msg
+if __name__ == "__main__":
+    print(help_msg)
