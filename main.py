@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import datetime as dt
-from HLDB_func.HLDB_normal_msg import give_msg
+from HLDB_func.HLDB__msg import give_msg
 
 TOKEN = "SECRET TOKEN"
 
